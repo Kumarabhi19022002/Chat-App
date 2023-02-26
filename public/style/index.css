@@ -1,0 +1,175 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+main header {
+  background-color: #a28fdb;
+  color: white;
+  padding: 7px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main header div.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main header div.title h1 {
+  font-style: "Baloo 2", cursive;
+  font-size: 32px;
+  margin-left: 10px;
+}
+main header button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+main div.container {
+  background-color: #7E878C;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+main div.container div.users-window {
+  width: 350px;
+  color: #ffffff;
+  background-color: #3F3F3F;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+main div.container div.users-window div.users-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+main div.container div.users-window div.users-head h4 {
+  background-color: #7E878C;
+  padding: 0 8px;
+  border-radius: 50px;
+}
+main div.container div.users-window div.users-list p {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+main div.container div.chat-window {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #3F3F3F;
+}
+main div.container div.chat-window div.chats {
+  height: 65vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+main div.container div.chat-window div.chats div.user-join {
+  font-size: 0.9rem;
+  color: #3F3F3F;
+  background-color: #ffffff;
+  border-radius: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 7px 20px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+main div.container div.chat-window div.chats div.message {
+  color: #3F3F3F;
+  background-color: #ffffff;
+  padding: 5px 15px;
+  max-width: 400px;
+  margin-bottom: 15px;
+  border-radius: 50px;
+}
+main div.container div.chat-window div.chats div.message p {
+  font-size: 16px;
+}
+main div.container div.chat-window div.chats div.outgoing {
+  margin-left: auto;
+  color: #ffffff;
+  background-color: #a28fdb;
+  border-radius: 50px;
+  text-align: right;
+}
+main div.container div.chat-window div.user-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px;
+}
+main div.container div.chat-window div.user-input input {
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 50px 0 0 50px;
+}
+main div.container div.chat-window div.user-input button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  background-color: #a28fdb;
+  border-radius: 0 50px 50px 0;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 95%;
+  }
+  main header button {
+    display: block;
+  }
+  main div.container {
+    position: relative;
+  }
+  main div.container div.users-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 11;
+    box-shadow: 0 15px 28px -20px black;
+    padding-bottom: 0;
+    display: none;
+  }
+  main div.container div.chat-window div.chats div.message {
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=index.css.map */
